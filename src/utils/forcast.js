@@ -10,7 +10,7 @@ const forcast = (latitude, longitude, callback) => {
             callback(body.message, undefined)
         }
         else {
-            callback(undefined, 'Temperature is ' + body.main.temp  + 'K and weather condition is ' + body.weather[0].description)
+            callback(undefined, 'Temperature is ' + body.main.temp  + 'K, weather condition is ' + body.weather[0].description + " and humidity is " + body.main.humidity)
         }
     })
 }
